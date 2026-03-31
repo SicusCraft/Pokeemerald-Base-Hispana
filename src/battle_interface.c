@@ -690,6 +690,10 @@ u8 CreateBattlerHealthboxSprites(enum BattlerId battler)
     gBattleStruct->ballSpriteIds[1] = MAX_SPRITES;
     gBattleStruct->moveInfoSpriteId = MAX_SPRITES;
 
+    gSprites[healthboxLeftSpriteId].oam.objMode = ST_OAM_OBJ_BLEND;
+    gSprites[healthboxRightSpriteId].oam.objMode = ST_OAM_OBJ_BLEND;
+    gSprites[healthbarSpriteId].oam.objMode = ST_OAM_OBJ_BLEND;
+
     return healthboxLeftSpriteId;
 }
 
@@ -748,9 +752,14 @@ static void SpriteCB_HealthBoxOther(struct Sprite *sprite)
 {
     u8 healthboxMainSpriteId = sprite->hOther_HealthBoxSpriteId;
 
+    SetGpuReg(REG_OFFSET_BLDCNT, 
+              BLDCNT_EFFECT_BLEND | 
+              BLDCNT_TGT2_BG_ALL);
+
+    SetGpuReg(REG_OFFSET_BLDALPHA, BLDALPHA_BLEND(8, 8));
+
     sprite->x = gSprites[healthboxMainSpriteId].x + 64;
     sprite->y = gSprites[healthboxMainSpriteId].y;
-
     sprite->x2 = gSprites[healthboxMainSpriteId].x2;
     sprite->y2 = gSprites[healthboxMainSpriteId].y2;
 }
