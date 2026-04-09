@@ -2083,3 +2083,11 @@ const u8 BeamSprite[] = INCBIN_U8("graphics/tutoriales/minijuego_zubat/sprites/b
 const u8 ZubatIcon[] = INCBIN_U8("graphics/tutoriales/minijuego_zubat/sprites/zubat_icon.4bpp");
 const u16 ZubatKoffing_Palette[] = INCBIN_U16("graphics/tutoriales/minijuego_zubat/sprites/pal.gbapal");
 #endif //TUTORIAL_MINIJUEGO_ZUBAT
+
+#if TUTORIAL_EFECTIVIDAD_TIPOS == TRUE
+
+const u32 FondoEfectividadTipos_Tiles[]     = INCBIN_U32("graphics/tutoriales/efectividad_tipos/tiles.4bpp");
+const u32 FondoEfectividadTipos_Tilemap[]   = INCBIN_U32("graphics/tutoriales/efectividad_tipos/tilemap.bin");
+const u16 FondoEfectividadTipos_Paleta[]    = INCBIN_U16("graphics/tutoriales/efectividad_tipos/tiles.gbapal");
+
+#endif //TUTORIAL_EFECTIVIDAD_TIPOS

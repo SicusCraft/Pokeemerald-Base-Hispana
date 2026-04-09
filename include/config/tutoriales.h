@@ -64,4 +64,7 @@ y ya tendríamos nuestros nuevos sprites cargados en la pantalla de la GBA, y so
 Si el config es TRUE, activa una opción en el Start Menu que carga tres opciones: un background, un background más sprites, y un minijuego.
 El tutorial viene en src/tutoriales/minijuego_zubat.c, y está pensado para seguir el orden en ese archivo, desde la carga de bgs y sprites, hasta el mismo minijuego.
 */
+
+#define TUTORIAL_EFECTIVIDAD_TIPOS    TRUE
+
 #endif // GUARD_CONFIG_TUTORIALES_H

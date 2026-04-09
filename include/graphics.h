@@ -3515,4 +3515,9 @@ extern const u16 gGhostPalette[];
     extern const u8 ZubatIcon[];
     extern const u16 ZubatKoffing_Palette[];
 
+    //  Tabla de tipos
+    extern const u32 FondoEfectividadTipos_Tiles[];
+    extern const u32 FondoEfectividadTipos_Tilemap[];
+    extern const u16 FondoEfectividadTipos_Paleta[];
+
 #endif //GUARD_GRAPHICS_H
