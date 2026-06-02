@@ -24,7 +24,7 @@
 
 #if IS_FRLG
 
-#define INTRO_SPECIES SPECIES_NIDORAN_F
+#define INTRO_SPECIES SPECIES_RATTATA
 
 enum
 {
@@ -1552,7 +1552,7 @@ static void Task_OakSpeech_FadeInRivalPic(u8 taskId)
     ChangeBgX(2, 0, BG_COORD_SET);
     gTasks[taskId].tTrainerPicPosX = 0;
     gSpriteCoordOffsetX = 0;
-    LoadTrainerPic(RIVAL_PIC, 0);
+    LoadTrainerPic(OAK_PIC, 0);
     CreateFadeOutTask(taskId, 2);
     gTasks[taskId].func = Task_OakSpeech_AskRivalsName;
 }
@@ -1565,7 +1565,8 @@ static void Task_OakSpeech_AskRivalsName(u8 taskId)
     {
         OakSpeechPrintMessage(gOakSpeech_Text_WhatWasHisName, sOakSpeechResources->textSpeed, FALSE);
         sOakSpeechResources->hasPlayerBeenNamed = TRUE;
-        gTasks[taskId].func = Task_OakSpeech_MoveRivalDisplayNameOptions;
+        GetDefaultName(sOakSpeechResources->hasPlayerBeenNamed, 1);
+        gTasks[taskId].func = Task_OakSpeech_FadeOutRivalPic;
     }
 }
 

@@ -155,8 +155,7 @@ gControlsGuide_Text_LRButtons::
 	.string "press the L or R Button.$"
 
 gOakSpeech_Text_AskPlayerGender::
-	.string "Now tell me. Are you a boy?\n"
-	.string "Or are you a girl?$"
+	.string "-Selecciona un Genero-$"
 
 gPikachuIntro_Text_Page1::
 	.string "In the world which you are about to\n"
@@ -187,43 +186,53 @@ gPikachuIntro_Text_Page3::
 	.string "adventure begin!$"
 
 gOakSpeech_Text_WelcomeToTheWorld::
-	.string "Hello, there!\n"
-	.string "Glad to meet you!\p"
-	.string "Welcome to the world of POKéMON!\p"
-	.string "My name is OAK.\p"
-	.string "People affectionately refer to me\n"
-	.string "as the POKéMON PROFESSOR.\p$"
+	.string "Hola, bienvenido al\n"
+	.string "team rocket.\p"
+	.string "Este es el Mundo Pokémon.\p"
+	.string "Eres una de las pocas personas\n"
+	.string "afortunadas a los que se les ha\l"
+	.string "permitido entrar a nuestra\l"
+	.string "organizacion.\p"
+	.string "¡Más te vale demostrar\n"
+	.string "ser digno de ello!\p"
+	.string "Si eres como los otros novatos,\n"
+	.string "Supongo que nunca tuviste la\l"
+	.string "oportunidad de tener un Pokémon\l"
+	.string "en tu vida, ¿O me equivoco?\p$"
 
 gOakSpeech_Text_ThisWorld::
-	.string "This world…$"
+	.string "En tal caso, dejame decirte\n"
+	.string "que este…$"
 
 gOakSpeech_Text_IsInhabitedFarAndWide::
-	.string "…is inhabited far and wide by\n"
-	.string "creatures called POKéMON.\p$"
+	.string "…¡Es tu dia de suerte!\p$"
 
 gOakSpeech_Text_IStudyPokemon::
-	.string "For some people, POKéMON are pets.\n"
-	.string "Others use them for battling.\p"
-	.string "As for myself…\p"
-	.string "I study POKéMON as a profession.\p$"
+	.string "Cada uno de ustedes recibirá\n"
+	.string "una de estas bellezas.\p"
+	.string "No quiero escuchar quejas de tu\n"
+	.string "parte.\p"
+	.string "Si no te gusta, entonces sal\n"
+	.string "y robate algo mejor.\p"
+	.string "¡Esta es una organizacion criminal,\n"
+	.string "no una caridad para llorar\l"
+	.string "beneficios en voz alta!\p$"
 
 gOakSpeech_Text_TellMeALittleAboutYourself::
-	.string "But first, tell me a little about\n"
-	.string "yourself.\p$"
+	.string "De todas formas, la charla\n"
+	.string "no es importante ahora…\p"
+	.string "¿Qué tal si me cuentas un poco\n"
+	.string "sobre ti?\p$"
 
 gOakSpeech_Text_YourNameWhatIsIt::
-	.string "Let's begin with your name.\n"
-	.string "What is it?\p$"
+	.string "Supongo que tienes un nombre,\n"
+	.string "¿verdad?\p$"
 
 gOakSpeech_Text_SoYourNameIsPlayer::
-	.string "Right…\n"
-	.string "So your name is {PLAYER}.$"
+	.string "¿Es {PLAYER}?$"
 
 gOakSpeech_Text_WhatWasHisName::
-	.string "This is my grandson.\p"
-	.string "He's been your rival since you both\n"
-	.string "were babies.\p"
-	.string "…Erm, what was his name now?$"
+	.string "Entonces es {PLAYER}, entiendo.\p$"
 
 gOakSpeech_Text_YourRivalsNameWhatWasIt::
 	.string "Your rival's name, what was it now?$"
@@ -236,8 +245,15 @@ gOakSpeech_Text_RememberRivalsName::
 	.string "His name is {RIVAL}!\p$"
 
 gOakSpeech_Text_LetsGo::
-	.string "{PLAYER}!\p"
-	.string "Your very own POKéMON legend is\n"
-	.string "about to unfold!\p"
-	.string "A world of dreams and adventures\n"
-	.string "with POKéMON awaits! Let's go!$"
+	.string "¡Muy bien, {PLAYER}!\p"
+	.string "¡Te espera una nueva vida de\n"
+	.string "violencia, robo y demas delitos!\p"
+	.string "¡Trata de mantenerte alejado de\n"
+	.string "la policía, cumple las órdenes de\l"
+	.string "tus superiores y no muestres piedad\l"
+	.string "a nadie!\p"
+	.string "Haz eso y tal vez algún día puedas\n"
+	.string "llegar a ser alguien poderoso como yo.\p"
+	.string "O tal vez no, ¿quién sabe?\p"
+	.string "¡Ahora muévete, no tenemos todo el\n"
+	.string "día!$"
