@@ -158,32 +158,25 @@ gOakSpeech_Text_AskPlayerGender::
 	.string "-Selecciona un Genero-$"
 
 gPikachuIntro_Text_Page1::
-	.string "In the world which you are about to\n"
-	.string "enter, you will embark on a grand\n"
-	.string "adventure with you as the hero.\n"
-	.string "\n"
-	.string "Speak to people and check things\n"
-	.string "wherever you go, be it towns, roads,\n"
-	.string "or caves. Gather information and\n"
-	.string "hints from every source.$"
+	.string "Las cosas parecían estar tranquilas\n"
+	.string "en la región de Kanto. El campeón, \n"
+	.string "Lance, mantuvo a flote a la\n"
+	.string "región tras la Gran Guerra,$"
 
 gPikachuIntro_Text_Page2::
-	.string "New paths will open to you by helping\n"
-	.string "people in need, overcoming challenges,\n"
-	.string "and solving mysteries.\n"
-	.string "\n"
-	.string "At times, you will be challenged by\n"
-	.string "others and attacked by wild creatures.\n"
-	.string "Be brave and keep pushing on.$"
+	.string "Sin embargo, pronto, apareció una\n"
+	.string "gran piedra en el zapato para Kanto: el\n"
+	.string "Team Rocket. Una organización criminal\n"
+	.string "muy respetada por diversas pandillas.$"
 
 gPikachuIntro_Text_Page3::
-	.string "Through your adventure, we hope\n"
-	.string "that you will interact with all sorts\n"
-	.string "of people and achieve personal growth.\n"
-	.string "That is our biggest objective.\n"
+	.string "Buscando un mundo dominado por la gran R,\n"
+	.string "recorrerían Ciudades, Rutas y Calles\n"
+	.string "para reclutar Entrenadores ambiciosos\n"
+	.string "para que realicen el Trabajo Sucio.\n"
 	.string "\n"
-	.string "Press the A Button, and let your\n"
-	.string "adventure begin!$"
+	.string "Nuestra historia seguirá a uno de\n"
+	.string "estos Entrenadores.$"
 
 gOakSpeech_Text_WelcomeToTheWorld::
 	.string "Hola, bienvenido al\n"
