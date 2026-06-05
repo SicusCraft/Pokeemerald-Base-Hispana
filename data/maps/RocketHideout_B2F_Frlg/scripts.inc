@@ -12,6 +12,14 @@ RocketHideout_B2F_Frlg_OnFrame::
 	map_script_2 VAR_MAP_SCENE_GUARIDA_ROCKET_INTRO, 0, RocketHideout_B2F_Frlg_Intro
 	.2byte 0
 
+RocketHideout_B2F_Frlg_EventScript_Trigger_1::
+	lock
+	setspeaker SP_NAME_PETREL
+	msgbox RocketHideout_B2F_Frlg_Text_A_donde_vas, MSGBOX_AUTOCLOSE
+	applymovement LOCALID_PLAYER, RocketHideout_B2F_Frlg_Movement_PlayerMov_1
+	release
+	end
+
 RocketHideout_B2F_Frlg_EventScript_RattataInicial::
 	lock
 	goto_if_set FLAG_RATTATA_OBTENIDO, RocketHideout_B2F_Frlg_EventScript_Caja
@@ -61,6 +69,7 @@ RocketHideout_B2F_Frlg_EventScript_Muevete::
 	setflag FLAG_HIDE_RIVAL_IN_ROCKET_HIDEOUT
 	setflag FLAG_SYS_POKEMON_GET
 	removeobject LOCALID_GRUNT_1
+	setvar VAR_MAP_SCENE_GUARIDA_ROCKET_BLOQUEOS, 1
 	releaseall
 	end
 
@@ -77,6 +86,39 @@ RocketHideout_B2F_Frlg_EventScript_Nombre::
 	setvar VAR_0x8004, 0
 	call Common_EventScript_NameReceivedPartyMon
 	goto RocketHideout_B2F_Frlg_EventScript_Muevete
+	end
+
+RocketHideout_B2F_Frlg_EventScript_Recluta_1::
+	checkplayergender
+	goto_if_eq VAR_RESULT, MALE, RocketHideout_B2F_Frlg_EventScript_Recluta_1M
+	goto_if_eq VAR_RESULT, FEMALE, RocketHideout_B2F_Frlg_EventScript_Recluta_1F
+	end
+
+RocketHideout_B2F_Frlg_EventScript_Recluta_1Rattata::
+	goto_if_set FLAG_RATTATA_OBTENIDO, RocketHideout_B2F_Frlg_EventScript_Recluta_1
+	checkplayergender
+	goto_if_eq VAR_RESULT, MALE, RocketHideout_B2F_Frlg_EventScript_Recluta_1MRattata
+	goto_if_eq VAR_RESULT, FEMALE, RocketHideout_B2F_Frlg_EventScript_Recluta_1FRattata
+	end
+
+RocketHideout_B2F_Frlg_EventScript_Recluta_1MRattata::
+	msgbox RocketHideout_B2F_Frlg_Text_Recluta_1MRattata, MSGBOX_NPC
+	end
+
+RocketHideout_B2F_Frlg_EventScript_Recluta_1M::
+	msgbox RocketHideout_B2F_Frlg_Text_Recluta_1M, MSGBOX_NPC
+	end
+
+RocketHideout_B2F_Frlg_EventScript_Recluta_1FRattata::
+	msgbox RocketHideout_B2F_Frlg_Text_Recluta_1FRattata, MSGBOX_NPC
+	end
+
+RocketHideout_B2F_Frlg_EventScript_Recluta_1F::
+	msgbox RocketHideout_B2F_Frlg_Text_Recluta_1F, MSGBOX_NPC
+	end
+
+RocketHideout_B2F_Frlg_EventScript_Recluta_2::
+	msgbox RocketHideout_B2F_Frlg_Text_Recluta_2, MSGBOX_NPC
 	end
 
 RocketHideout_B2F_Frlg_Intro:
@@ -235,8 +277,36 @@ RocketHideout_B2F_Frlg_Text_Muevete:
 	.string "¡El siguiente!, ¡Muevete!$"
 
 RocketHideout_B2F_Frlg_Text_Caja_1:
-	.string "¡Oye! ¡Solo un Rattata por$"
+	.string "¡Oye! ¡Solo un Rattata por\n"
 	.string "Soldado! ¿Me oyes?$"
+
+RocketHideout_B2F_Frlg_Text_Recluta_1MRattata:
+	.string "¿Puedo saber a donde vas\n"
+	.string "recluta? ¡Ve y busca a tu\l"
+	.string "roedor!$"
+	.string "¡Haz lo que te dicen!$"
+
+RocketHideout_B2F_Frlg_Text_Recluta_1M:
+	.string "¿Puedo saber a donde vas\n"
+	.string "recluta? ¡Debes reportarte\l"
+	.string "arriba!$"
+	.string "¡Haz lo que te dicen!$"
+
+RocketHideout_B2F_Frlg_Text_Recluta_1F:
+	.string "Mira señorita, no puedo\n"
+	.string "dejarte pasar, debes\l"
+	.string "reportarte arriba.$"
+
+RocketHideout_B2F_Frlg_Text_Recluta_1FRattata:
+	.string "Quieta ahi señorita, ve y\n"
+	.string "busca a tu roedor.$"
+
+RocketHideout_B2F_Frlg_Text_Recluta_2:
+	.string "Escalera equivocada Colega.$"
+
+RocketHideout_B2F_Frlg_Text_A_donde_vas:
+	.string "¡Ey, Recluta! ¡Vuelve aquí$"
+	.string "y recoge a tu Rattata!$"
 
 RocketHideout_B2F_Frlg_Movement_CameraMov_1::
 	walk_up
@@ -323,4 +393,8 @@ RocketHideout_B2F_Frlg_Movement_RivalMov_2::
 
 RocketHideout_B2F_Frlg_Movement_ReclutaMov_1::
 	walk_in_place_up
+	step_end
+
+RocketHideout_B2F_Frlg_Movement_PlayerMov_1::
+	walk_down
 	step_end
