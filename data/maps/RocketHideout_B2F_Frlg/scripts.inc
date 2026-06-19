@@ -29,7 +29,7 @@ RocketHideout_B2F_Frlg_EventScript_Recluta_novato_3::
 	end
 
 RocketHideout_B2F_Frlg_EventScript_Recluta_novato_4::
-	msgbox RocketHideout_B2F_Frlg_Text_Grunt_4, MSGBOX_DEFAULT
+	msgbox RocketHideout_B2F_Frlg_Text_Grunt_4, MSGBOX_AUTOCLOSE
 	end
 
 RocketHideout_B2F_Frlg_EventScript_Recluta_novato_5::
@@ -45,7 +45,7 @@ RocketHideout_B2F_Frlg_EventScript_Recluta_novato_7::
 	end
 
 RocketHideout_B2F_Frlg_EventScript_Recluta_novato_8::
-	msgbox RocketHideout_B2F_Frlg_Text_Grunt_8, MSGBOX_DEFAULT
+	msgbox RocketHideout_B2F_Frlg_Text_Grunt_8, MSGBOX_AUTOCLOSE
 	end
 
 RocketHideout_B2F_Frlg_EventScript_Recluta_novato_9::
